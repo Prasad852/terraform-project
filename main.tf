@@ -42,9 +42,9 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-015f72d56355ebc27"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "practice"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1a"
   tags = {
@@ -53,9 +53,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-06018068a18569ff2"
+  ami             = "ami-015f72d56355ebc27"
   instance_type   = "t2.micro"
-  key_name        = "rahamabc"
+  key_name        = "practice"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
